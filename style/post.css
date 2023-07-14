@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Satisfy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #171717;
+  color: #dde6ed;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7% 2%;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  flex-direction: column;
+}
+
+.head img {
+  width: clamp(100px, 100%, 1000px);
+  margin: 10px 0;
+  border-radius: 30px;
+}
+
+.head h1 {
+  font-family: "Satisfy", cursive;
+  font-size: clamp(30px, 5vw, 60px);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.description {
+  margin: 20px 0;
+  font-size: clamp(13px, 5vw, 18px);
+  text-indent: 5rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+.description p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  margin: 10px 0;
+}
+
+nav {
+  color: #dde6ed;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background: rgba(3, 201, 136, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo img {
+  width: 70px;
+}
+
+.create {
+  background: transparent;
+  border: #03c988 2px solid;
+  color: #03c988;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 1px 1px 500px 50px #787a91;
+  margin: 0 10px;
+}
+
+.btn button {
+  padding: 10px 10px;
+  background: transparent;
+  border: #03c988 2px solid;
+  color: #03c988;
+  text-transform: uppercase;
+  padding: 9px 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background: #03c988;
+  color: #dde6ed;
+  border: #dde6ed 2px solid;
+}
+
+.create:hover {
+  background: #03c988;
+  color: #dde6ed;
+  border: #dde6ed 2px solid;
+}
+
+.user {
+  border: #03c988 2px solid;
+  border-radius: 50%;
+  color: #03c988;
+  padding: 5px 8px;
+  background: transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.user:hover {
+  background: #03c988;
+  color: #dde6ed;
+  border: #dde6ed 2px solid;
+}
+
+footer {
+  min-height: 10vh;
+  width: 100%;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.modal {
+  color: #dde6ed;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.835);
+}
+
+.modal-content {
+  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  min-height: 100px;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.delete input {
+  width: clamp(200px, 100%, 400px);
+  height: 50px;
+  padding: 5px 20px;
+  outline: none;
+}
+
+.delete button {
+  width: 100px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background: transparent;
+  border: #dde6ed 2px solid;
+  color: #dde6ed;
+  transition: 0.3s ease;
+}
+
+.delete button:hover {
+  background: #171717;
+}
+
+.comment-container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-container .card {
+  border: 2px solid #dde6ed8f;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.card p {
+  font-size: clamp(15px, 5vw, 23px);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.card .info {
+  display: flex;
+  gap: 10px;
+  font-size: clamp(10px, 5vw, 15px);
+}

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background-color: #3b5249;
+  background-image: url(https://th.bing.com/th/id/R.06da7ae6d433a7eac76e5a0a85deafe7?rik=h%2bvwEZi5oKE2YA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-world-map-world-map-png-image-35422-2981.png&ehk=N2lPERxCOxF251frCW28WrI%2fd3ZyNF7FcpIu6BoMnE4%3d&risl=&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1%;
+}
+
+.container {
+  padding: 1%;
+  min-height: 500px;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container a {
+  color: aliceblue;
+  display: flex;
+  margin: 1% 0;
+  align-items: center;
+  gap: 30px;
+}
+
+.container a img {
+  width: clamp(100px, 100%, 300px);
+  height: fit-content;
+}

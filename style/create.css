@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Satisfy&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  color: #dde6ed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+form h1 {
+  text-transform: uppercase;
+  word-spacing: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  position: relative;
+  z-index: 20;
+  width: clamp(300px, 100%, 600px);
+  margin: auto;
+  padding: 2%;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.212);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  gap: 10px;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+  z-index: 20;
+}
+
+nav .back {
+  background: rgb(115, 163, 211);
+  padding: 10px 15px;
+  border: none;
+  color: #dde6ed;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.back:hover {
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card label {
+  font-size: clamp(9px, 5vw, 11px);
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card input {
+  padding: 15px;
+  border: 1px solid #dde6ed;
+  color: #dde6ed;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+}
+
+.card input:focus {
+  border: 1px solid #03c988;
+  transition: 0.3s ease;
+}
+
+form button {
+  width: clamp(100px, 100%, 300px);
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: #8a6edd;
+  border: none;
+  color: #dde6ed;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+form button:hover {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: 0.3s ease;
+}
+
+canvas {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 100%;
+}
+
+.introduction-canvas--overflow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+  background: linear-gradient(
+    to right bottom,
+    #17594a 0,
+    #263a2994 50%,
+    #17594a 100%
+  );
+}
